@@ -1,0 +1,17 @@
+#include <unistd.h>
+
+/**
+ *main - includes he <unistd.h> header to use the write function
+ *stores the desired message in a char
+ *uses the write function to output 
+ *the message to the standard error stream (2)
+ *
+ *Return: 1 to indicate an error
+ */
+
+int main(void)
+{
+char *msg = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+write(2, msg, 59);
+return (1);
+}
