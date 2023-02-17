@@ -14,7 +14,7 @@ c = 'a';
 
 while (c <= 'z')
 {
-printf("%c", c);
+putchar(c);
 c++;
 }
 
