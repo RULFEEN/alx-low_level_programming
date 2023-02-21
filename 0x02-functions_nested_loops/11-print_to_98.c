@@ -1,47 +1,41 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- *print_to_98 - Function that prints integers to 98
+ * print_to_98 - a function that prints all natural numbers from n to 98
+ * user input's number prints to 98, regardless < 98 or > 98
+ * @n: number input
  *
- *@n: number to start from
+ * Return: 0 (success)
  */
-
 void print_to_98(int n)
 {
-int i;
-if (n > 98)
-{
-for (i = n; i >= 98; i--)
-{
-if (i < 10)
-_putchar(i + '0');
-else if (i > 100)
-{ _putchar(i / 100 + '0');
-_putchar((i % 100) / 10 + '0');
-_putchar(i % 10 + '0'); }
-else
-{ _putchar(i / 10 + '0');
-_putchar(i % 10 + '0'); }
-if (i != 98)
-{ _putchar(',');
-_putchar(' '); }}
-_putchar('\n'); }
-else if (n < 98)
-{
-for (i = n; i <= 98; i++)
-{
-if (i < 10)
-_putchar(i + '0');
-else
-{ _putchar(i / 10 + '0');
-_putchar(i % 10 + '0'); }
-if (i != 98)
-{ _putchar(',');
-_putchar(' '); }}
-_putchar('\n'); }
-else
-{ _putchar(n / 10 + '0');
-_putchar(n % 10 + '0');
-_putchar('\n'); }
-return;
+	if (n < 98)
+	{
+		while (n <= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n++;
+		}
+	}
+	else if (n > 98)
+	{
+		while (n >= 98)
+		{
+			printf("%d", n);
+			if (n != 98)
+			{
+				printf(", ");
+			}
+			n--;
+		}
+	}
+	else
+	{
+		printf("98");
+	}
+	printf("\n");
 }
