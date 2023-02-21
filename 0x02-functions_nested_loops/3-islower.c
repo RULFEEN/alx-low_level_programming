@@ -4,6 +4,8 @@
  *_islower - Function that prints 1 if c is lowercase
  *           includes numbers between 97 and 122
  *
+ *@c:  a parameter for a primitive integer
+ *
  *Return: 1 for lowercase i.e. ASCII 97 to 122, 0 otherwise
  */
 
