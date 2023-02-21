@@ -37,10 +37,11 @@ else
 _putchar(i % 10 + '0'); }
 if (i != 98)
 { _putchar(',');
-_putchar(' ');
-_putchar('\n'); }}}
+_putchar(' '); }}
+_putchar('\n'); }
 else
 { _putchar(n / 10 + '0');
 _putchar(n % 10 + '0');
 _putchar('\n'); }
+return;
 }
