@@ -21,7 +21,7 @@ days_in_feb = 29;
 days_in_year = 366;
 }
 
-day = convert_day(month, day);
+/*day = convert_day(month, day);*/
 
 if (days_in_feb == 29 && month > 2)
 {
