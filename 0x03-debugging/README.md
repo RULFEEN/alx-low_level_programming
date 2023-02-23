@@ -1,0 +1,2 @@
+Debbugging:
+Rubber duck debugging
