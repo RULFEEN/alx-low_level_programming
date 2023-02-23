@@ -12,23 +12,26 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-int days_in_feb = 28;
-int days_in_year = 365;
-
-if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+if ((year % 4 == 0 && year % 400 != 0) || year % 400 == 0)
 {
-days_in_feb = 29;
-days_in_year = 366;
-}
-
-/*day = convert_day(month, day);*/
-
-if (days_in_feb == 29 && month > 2)
+if (month >= 2 && day >= 60)
 {
-day += 1;
+day++;
 }
 
 printf("Day of the year: %d\n", day);
-printf("Remaining days: %d\n", days_in_year - day);
-return;
+printf("Remaining days: %d\n", 366 - day);
+}
+else
+{
+if (month == 2 && day == 60)
+{
+printf("Invalid date: %02d/%02d/%04d\n", month, day - 31, year);
+}
+else
+{
+printf("Day of the year: %d\n", day);
+printf("Remaining days: %d\n", 365 - day);
+}
+}
 }
