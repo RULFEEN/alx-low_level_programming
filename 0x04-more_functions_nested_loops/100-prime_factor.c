@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ *main - function that returns the largest prime factor
+ *
+ *Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 long int num = 612852475143;
