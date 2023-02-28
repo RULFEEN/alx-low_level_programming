@@ -18,5 +18,5 @@ len++;
 for (j = 0; j < len; j++)
 dest[j] = src[j];
 
-return (*dest);
+return (dest);
 }
