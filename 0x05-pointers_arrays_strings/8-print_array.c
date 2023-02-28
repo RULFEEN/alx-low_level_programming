@@ -1,4 +1,5 @@
 #include "main.h"
+#include <main.h>
 
 /**
 *print_array - prints an array contiguously
@@ -11,7 +12,7 @@
 void print_array(int *a, int n)
 {
 int i;
-  
-for(i = 0; i < n; i++)
+
+for (i = 0; i < n; i++)
 printf(a[i]);
 }
