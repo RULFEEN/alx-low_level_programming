@@ -1,9 +1,16 @@
 #include "main.h"
 
+/**
+ *puts_half - prints half a string
+ *
+ *@str: actionable string
+ *Return: void
+ */
+
 void puts_half(char *str)
 {
 int len = 0;
-int half;
+int half, i, j;
 
 for (i = 0; str[i] != '\0'; i++)
 len++;
