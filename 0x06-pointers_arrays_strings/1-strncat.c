@@ -4,7 +4,7 @@
  *_strncat - Function that appends second string up to n
  *@dest: Mutable string
  *@src: String mutation source
- *
+ *@n: integer that determines mutation length
  *Return: mutated string dest
  */
 
