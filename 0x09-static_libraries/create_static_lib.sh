@@ -1,11 +1,3 @@
 #!/bin/bash
-
-c_files=$(ls *.c)
-
-for c_file in $c_files; do
-    gcc -Wall -Werror -Wextra -pedantic -c "$c_file"
-done
-
-ar rcs liball.a *.o
-
-rm *.o
+gcc -Wall -pedantic -Werror -Wextra -std=gnu89 -c *.c
+ar -rc liball.a *.o 
