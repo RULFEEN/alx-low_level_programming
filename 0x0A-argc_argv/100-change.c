@@ -6,23 +6,23 @@
  *@argc: number of arguments
  *@argv: string of arguments
  *
- *Return: o if success, 1 if error
+ *Return: 0 if success, 1 if error
  */
 
 int main(int argc, char **argv)
 {
+int cents = atoi(argv[1]);
+int coins = 0;
 if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
-int cents = atoi(argv[1]);
 if (cents < 0)
 {
 printf("0\n");
 return (0);
 }
-int coins = 0;
 coins += cents / 25;
 cents %= 25;
 coins += cents / 10;
