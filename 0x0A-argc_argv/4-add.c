@@ -17,14 +17,16 @@ if (argc > 1)
 {
 for (i = 1; i < argc; i++)
 {
-if (isdigit(*argv[i]))
-sum += atoi(argv[i]);
-else
+int j;
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
-break;
 }
+}
+sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
 return (0);
