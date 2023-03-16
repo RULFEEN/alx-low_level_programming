@@ -23,7 +23,6 @@ return (NULL);
 
 for (i = 0; i < (tsize + 1); i++)
 foo[i] = 0;
-foo[i] = '\0';
 
 return (foo);
 }
