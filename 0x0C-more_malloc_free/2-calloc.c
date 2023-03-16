@@ -14,14 +14,14 @@ char *foo;
 unsigned int i, tsize;
 
 tsize = nmemb * size;
-if (nmemb == 0 || size == 0)
+if (tsize == 0)
 return (NULL);
 
 foo = malloc(tsize + 1);
 if (foo == NULL)
 return (NULL);
 
-for (i = 0; i < (tsize + 1); i++)
+for (i = 0; i <= (tsize + 1); i++)
 foo[i] = 0;
 
 return (foo);
