@@ -20,7 +20,7 @@ s1 = "";
 if (s2 == NULL)
 s2 = "";
 len1 = strlen(s1);
-len2 = strlen(s2);
+len2 = strlen(s2) + 1;
 
 if (n <= len2)
 len3 = len1 + n;
