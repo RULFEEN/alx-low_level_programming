@@ -18,7 +18,7 @@ tsize = nmemb * size;
 if (tsize == 0)
 return (NULL);
 
-foo = malloc(tsize);
+foo = malloc(tsize + 1);
 if (foo == NULL)
 return (NULL);
 
