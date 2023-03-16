@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 /**
  *_calloc - malloc's calloc pseudo-code
@@ -20,7 +21,7 @@ return (NULL);
 if (nmemb > UINT_MAX / size)
 return (NULL);
 
- foo = malloc(tsize);
+foo = malloc(tsize);
 if (foo == NULL)
 return (NULL);
 
