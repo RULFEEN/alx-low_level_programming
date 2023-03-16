@@ -14,7 +14,7 @@ char *foo;
 unsigned int i, tsize;
 
 tsize = nmemb * size;
-if (tsize == 0)
+if (nmemb == 0 || size == 0)
 return (NULL);
 
 foo = malloc(tsize + 1);
