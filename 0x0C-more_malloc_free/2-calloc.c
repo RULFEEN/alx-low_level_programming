@@ -17,7 +17,10 @@ tsize = nmemb * size;
 if (tsize == 0)
 return (NULL);
 
-foo = malloc(tsize + 1);
+if (nmemb > UINT_MAX / size)
+return (NULL);
+
+ foo = malloc(tsize);
 if (foo == NULL)
 return (NULL);
 
