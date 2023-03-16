@@ -18,11 +18,11 @@ tsize = nmemb * size;
 if (tsize == 0)
 return (NULL);
 
-foo = malloc(tsize + 1);
+foo = malloc(tsize);
 if (foo == NULL)
 return (NULL);
 
-for (i = 0; i < (tsize + 1); i++)
+for (i = 0; i < tsize; i++)
 foo[i] = 0;
 
 return (foo);
