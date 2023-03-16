@@ -21,7 +21,7 @@ foo = malloc(tsize + 1);
 if (foo == NULL)
 return (NULL);
 
-for (i = 0; i <= (tsize + 1); i++)
+for (i = 0; i < (tsize + 1); i++)
 foo[i] = 0;
 
 return (foo);
