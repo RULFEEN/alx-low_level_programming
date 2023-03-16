@@ -34,7 +34,7 @@ for (i = 0; i < len1; i++)
 foo[i] = s1[i];
 for (j = 0; j < (len3 - len1); j++)
 foo[i + j] = s2[j];
-foo[i = j] = '\0';
+foo[i + j] = '\0';
 
 return (foo);
 }
