@@ -19,22 +19,22 @@ dog2 = malloc(sizeof(dog_t));
 if (dog2 == NULL)
 return (NULL);
 
-new_dog->name = strdup(name);
-if (new_dog->name == NULL)
+dog2->name = strdup(name);
+if (dog2->name == NULL)
 {
-free(new_dog);
+free(dog2);
 return (NULL);
 }
 
-new_dog->owner = strdup(owner);
-if (new_dog->owner == NULL)
+dog2->owner = strdup(owner);
+if (dog2->owner == NULL)
 {
-free(new_dog->name);
-free(new_dog);
+free(dog2->name);
+free(dog2);
 return (NULL);
 }
 
-new_dog->age = age;
+dog2->age = age;
 
 return (dog2);
 }
