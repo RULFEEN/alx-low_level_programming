@@ -1,0 +1,1 @@
+Declarations: Structures and typedef
